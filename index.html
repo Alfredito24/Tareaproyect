@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FishingStore</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#inicio" class="brand">FishingStore</a>
+      <nav class="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#tienda">Tienda en línea</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">FishingStore</p>
+        <h1>Tu tienda online de pesca especializada</h1>
+        <p class="hero-subtitle">E-commerce de equipo de pesca con señuelos, cañas, carretes y anzuelos seleccionados para tus mejores viajes.</p>
+        <div class="hero-actions">
+          <a href="dofa.html" class="hero-button">Ver matriz DOFA</a>
+          <a href="#tienda" class="hero-button ghost">Ir a la tienda</a>
+        </div>
+        <div class="group-info">
+          <p><strong>Integrantes del grupo:</strong> Alfredo Jose Bolívar Ortega</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="about">
+      <div class="section-header">
+        <p class="section-label">Página de inicio</p>
+        <h2>FishingStore: tu tienda online de pesca especializada</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>FishingStore es un comercio electrónico creado para pescadores que buscan calidad, estilo y confianza en cada lanzamiento. Nuestro catálogo ofrece equipos pensados para principiantes y expertos, con descripciones claras y precios simulados para facilitar tu elección.</p>
+          <p>Aunque esta página es una propuesta de negocio, está diseñada como una tienda real con productos atractivos y un contacto sencillo para clientes potenciales.</p>
+        </div>
+        <div class="about-images">
+          
+          <div class="image-card small">
+            <img src="cañas.jpg" alt="Caña de pesca" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="store" id="tienda">
+      <div class="section-header">
+        <p class="section-label">Tienda en línea</p>
+        <h2>Productos disponibles</h2>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="señuelo.webp" alt="Señuelo Aurora" />
+          <span class="tag">Señuelo</span>
+          <h3>Señuelo Aurora</h3>
+          <p>Señuelo con brillo reflejante y movimientos realistas para atraer a depredadores en aguas claras.</p>
+          <p class="price">$24.990</p>
+          <a href="#contacto" class="cta-button">Compra ahora</a>
+        </article>
+
+        <article class="product-card">
+          <img src="caña.webp" alt="Caña Basecamp" />
+          <span class="tag">Caña</span>
+          <h3>Caña Basecamp 2.4m</h3>
+          <p>Caña ligera y resistente con klinga de respuesta rápida. Perfecta para pesca en río y embalse.</p>
+          <p class="price">$79.990</p>
+          <a href="#contacto" class="cta-button">Compra ahora</a>
+        </article>
+
+        <article class="product-card">
+          <img src="carrete.webp" alt="Carrete SwiftCast" />
+          <span class="tag">Carrete</span>
+          <h3>Carrete SwiftCast</h3>
+          <p>Carrete con freno ajustable y bobina suave, ideal para lances largos y recobros precisos.</p>
+          <p class="price">$64.990</p>
+          <a href="#contacto" class="cta-button">Compra ahora</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="section-header">
+        <p class="section-label">Página de contacto</p>
+        <h2>Hablemos de pesca</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-details">
+          <p>¿Tienes preguntas sobre los productos o quieres comprar? Contáctanos y te responderemos pronto.</p>
+          <ul>
+            <li><strong>Correo:</strong> contacto@fishingstore.example</li>
+            <li><strong>Instagram:</strong> @FishingStore</li>
+            <li><strong>Facebook:</strong> /FishingStore</li>
+          </ul>
+        </div>
+        <form class="contact-form">
+          <label>
+            Nombre completo
+            <input type="text" placeholder="Tu nombre" />
+          </label>
+          <label>
+            Correo electrónico
+            <input type="email" placeholder="correo@ejemplo.com" />
+          </label>
+          <label>
+            Mensaje
+            <textarea rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+          </label>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>FishingStore — Tienda de equipo de pesca con estilo y confianza.</p>
+  </footer>
+
+  <script>
+    // Auto-rotate carousel
+    let currentSlide = 1;
+    const totalSlides = 3;
+    const rotationInterval = 4000; // 4 segundos entre cambios
+
+    setInterval(() => {
+      document.getElementById(`slide${currentSlide}`).checked = true;
+      currentSlide = currentSlide === totalSlides ? 1 : currentSlide + 1;
+    }, rotationInterval);
+  </script>
+</body>
+</html>
